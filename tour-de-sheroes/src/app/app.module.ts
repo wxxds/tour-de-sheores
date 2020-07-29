@@ -12,7 +12,7 @@ import { HttpClientModule }    from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
-import { CommentsComponent } from './comments/comment-tree.component';
+import { CommentTree } from './comments/comment-tree.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { CommentsComponent } from './comments/comment-tree.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    CommentsComponent
+    CommentTree
   ],
   imports: [
     BrowserModule,

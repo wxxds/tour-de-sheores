@@ -27,7 +27,7 @@ export class CommentNode {
   templateUrl: './comment-tree.component.html',
   styleUrls: [ './comment-tree.component.css' ]
 })
-export class CommentsComponent implements OnInit {
+export class CommentTree implements OnInit {
   @Input()
   comments:CommentNode[] = [];
   text:string;

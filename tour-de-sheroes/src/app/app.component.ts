@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, VERSION } from '@angular/core';
 import {CommentNode} from './comments/comment-tree.component'
 
 
@@ -9,6 +9,7 @@ import {CommentNode} from './comments/comment-tree.component'
 })
 
 export class AppComponent {
+  ngVersion: string = VERSION.full;
   comments:Array<CommentNode> = [];
   constructor(){    
     this.comments =  [new CommentNode("First")]

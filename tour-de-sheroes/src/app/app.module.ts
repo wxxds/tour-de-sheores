@@ -14,6 +14,8 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { CommentTree } from './comments/comment-tree.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 
 @NgModule({
@@ -33,6 +35,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     AppRoutingModule,
     HttpClientModule,
     MatGridListModule,
+    FlexLayoutModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
@@ -48,4 +51,6 @@ import {MatGridListModule} from '@angular/material/grid-list';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+}

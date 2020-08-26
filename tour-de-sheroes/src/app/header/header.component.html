@@ -1,0 +1,29 @@
+<p *ngIf="deviceXs">header works!</p>
+<mat-toolbar>
+<mat-toolbar-row fxLayoutAlign="space-between center">
+    <div>
+        <button  routerLink="/dashboard" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+            <mat-icon aria-hidden="false">menu</mat-icon>
+          </button>
+      
+
+    </div>
+
+    <div>
+        <button  routerLink="/heroes" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+            <mat-icon aria-hidden="false">more_vert</mat-icon>
+          </button>
+    </div>
+    <div>
+        <app-hero-search></app-hero-search>
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row *ngIf="deviceXs">
+    <span>
+        <a 
+        routerLink="/heroes">Heroes</a>
+
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>

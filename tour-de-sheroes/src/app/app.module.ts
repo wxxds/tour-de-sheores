@@ -15,7 +15,11 @@ import { CommentTree } from './comments/comment-tree.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { HeaderComponent } from './header/header.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -26,11 +30,17 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    CommentTree
+    CommentTree,
+    HeaderComponent
+
 
   ],
   imports: [
     BrowserModule,
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
@@ -51,6 +61,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
+
+export class AppModule  {
+
 
 }
+

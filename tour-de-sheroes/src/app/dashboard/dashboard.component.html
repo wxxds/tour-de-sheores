@@ -1,12 +1,14 @@
-<h3>Top Heroes</h3>
-<mat-grid-list [cols]="breakpoint" rowHeight="2:2" (window:resize)="onResize($event)">
-  <a *ngFor="let hero of heroes" 
+
+<div class="container-fluid " *ngFor="let hero of heroes">
+ <div class="col-lg-4 col-md-2 col-sm-12">
+  <a  
       class=""
       routerLink="/detail/{{hero.id}}">
-      <mat-grid-tile>
-      <h4>{{hero.name}}</h4>
-    </mat-grid-tile>
-  </a>
-</mat-grid-list>
+     
+      <h4>{{hero.name}}</h4></a>
+      </div>
+  
+</div>
 
-<app-hero-search></app-hero-search>
+
+

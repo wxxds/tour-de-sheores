@@ -91,7 +91,7 @@ import {OverlayModule} from '@angular/cdk/overlay';
     ScrollingModule,
   ]
 })
-export class DemoMaterialModule {}
+export class AppModule {}
 
 
 /**  Copyright 2020 Google LLC. All Rights Reserved.
